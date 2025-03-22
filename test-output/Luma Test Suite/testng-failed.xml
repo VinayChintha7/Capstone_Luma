@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Luma Test Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="User Registration and Login Test(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="lumaPages.Runner">
+        <methods>
+          <include name="invokeBrowser"/>
+          <include name="testRegistration"/>
+          <include name="Screenshot"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- lumaPages.Runner -->
+    </classes>
+  </test> <!-- User Registration and Login Test(failed) -->
+</suite> <!-- Failed suite [Luma Test Suite] -->

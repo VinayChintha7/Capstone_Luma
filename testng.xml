@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Luma">
+    <test name="LoginTest">
+        <parameter name="browser" value="firefox"/>  
+        <classes>
+        <class name="lumaTest.RegistrationTest"/>
+      <!--  <class name="lumaTest.LoginPageTest"/>
+        <class name="lumaTest.SearchAndAddToCartTest"></class>-->
+       <!-- <class name="lumaTestNG.Runner"></class>-->
+        </classes>
+        
+    </test>
+</suite>
