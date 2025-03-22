@@ -4,13 +4,13 @@
   <test thread-count="5" name="LoginTest(failed)">
     <parameter name="browser" value="firefox"/>
     <classes>
-      <class name="lumaTest.RegistrationTest">
+      <class name="lumaTestNG.Runner">
         <methods>
           <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="testRegistration"/>
+          <include name="checkout"/>
         </methods>
-      </class> <!-- lumaTest.RegistrationTest -->
+      </class> <!-- lumaTestNG.Runner -->
     </classes>
   </test> <!-- LoginTest(failed) -->
 </suite> <!-- Failed suite [Luma] -->

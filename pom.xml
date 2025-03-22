@@ -163,12 +163,12 @@
 <pluginManagement>
         <plugins>
             <!-- Clean Lifecycle -->
-            <plugin>
+           <!-- <plugin>
                 <artifactId>maven-clean-plugin</artifactId>
                 <version>3.3.1</version>
             </plugin>
 
-            <!-- Default Lifecycle -->
+             Default Lifecycle 
             <plugin>
                 <artifactId>maven-resources-plugin</artifactId>
                 <version>3.3.1</version>
@@ -190,7 +190,7 @@
                 <version>3.0.0-M2</version>
             </plugin>
 
-            <!-- Site Lifecycle -->
+             Site Lifecycle 
             <plugin>
                 <artifactId>maven-site-plugin</artifactId>
                 <version>3.12.1</version>
@@ -199,15 +199,15 @@
                 <artifactId>maven-project-info-reports-plugin</artifactId>
                 <version>3.4.1</version>
             </plugin>
-
+-->
             <!-- Surefire Plugin (Only One Entry, Fixed Path) -->
              <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-surefire-plugin</artifactId>
-            <version>3.0.0-M7</version>
+            <version>3.0.0-M4</version>
             <configuration>
                 <suiteXmlFiles>
-                    <suiteXmlFile>C:\Users\Dinesh\eclipse-workspace\LumaTestAutomation2\testng.xml</suiteXmlFile>
+                    <suiteXmlFile>./testng.xml</suiteXmlFile>
                 </suiteXmlFiles>
             </configuration>
         </plugin>

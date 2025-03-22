@@ -20,7 +20,7 @@ public class CheckoutPage {
     }
 
 //     Locators using @FindBy
-    @FindBy(xpath = "//a[@class='action showcart']") 
+    @FindBy(css = ".action.showcart") 
     private WebElement cartIcon;
     
 //    By cartIcon = By.xpath("//a[contains(@class,'action showcart')]");

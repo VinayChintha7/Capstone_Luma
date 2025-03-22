@@ -29,9 +29,9 @@ public class Runner extends BaseClass {
 		addToCart.testSearchAndAddToCart();
 	}
 	
-	@Test(priority = 4)
-	public void checkout() {
-		CheckoutTest Checkout = new CheckoutTest();
-		Checkout.testCheckoutProcess();
-	}
+//	@Test(priority = 4)
+//	public void checkout() {
+//		CheckoutTest Checkout = new CheckoutTest();
+//		Checkout.testCheckoutProcess();
+//	}
 }

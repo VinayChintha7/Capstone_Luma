@@ -31,13 +31,13 @@ public class SearchAndAddToCartPage {
     public void navigateToJackets() {
         Actions actions = new Actions(driver);
 
-        WebElement men = wait.until(ExpectedConditions.visibilityOfElementLocated(menMenu)); // ✅ Wait for Men Menu
+        WebElement men = wait.until(ExpectedConditions.visibilityOfElementLocated(menMenu)); // Wait for Men Menu
         actions.moveToElement(men).perform();
 
-        WebElement tops = wait.until(ExpectedConditions.visibilityOfElementLocated(topsMenu)); // ✅ Wait for Tops
+        WebElement tops = wait.until(ExpectedConditions.visibilityOfElementLocated(topsMenu)); // Wait for Tops
         actions.moveToElement(tops).perform();
 
-        WebElement jackets = wait.until(ExpectedConditions.elementToBeClickable(jacketsMenu)); // ✅ Wait for Jackets
+        WebElement jackets = wait.until(ExpectedConditions.elementToBeClickable(jacketsMenu)); // Wait for Jackets
         actions.moveToElement(jackets).click().perform();
     }
 
