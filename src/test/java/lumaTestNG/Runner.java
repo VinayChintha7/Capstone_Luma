@@ -1,5 +1,7 @@
 package lumaTestNG;
 
+import java.io.IOException;
+
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -18,7 +20,7 @@ public class Runner extends BaseClass {
 	}
 	
 	@Test(priority = 2)
-	public void runnerLogin() {
+	public void runnerLogin() throws IOException {
 		LoginPageTest lt = new LoginPageTest();
 		lt.testLogin("VK1234@gmail.com","Test@1234");
 	}
@@ -30,7 +32,7 @@ public class Runner extends BaseClass {
 	}
 	
 //	@Test(priority = 4)
-//	public void checkout() {
+//	public void checkout() throws InterruptedException, IOException {
 //		CheckoutTest Checkout = new CheckoutTest();
 //		Checkout.testCheckoutProcess();
 //	}

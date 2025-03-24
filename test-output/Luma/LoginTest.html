@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>LoginTest</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>3/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>4/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sat Mar 22 14:26:08 IST 2025</td>
+<td>Started on:</td><td>Mon Mar 24 09:46:01 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>32 seconds (32429 ms)</td>
+<tr><td>Total time:</td><td>28 seconds (28077 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -77,61 +77,16 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='lumaTestNG.Runner.checkout()'><b>checkout</b><br>Test class: lumaTestNG.Runner</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: *[name=&apos;firstname&apos;]
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.2&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [38b05a84-5bf0-4ca1-8508-9057ec27f703, findElement {using=name, value=firstname}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 136.0.2, moz:accessibilityChecks: false, moz:buildID: 20250317120031, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 19044, moz:profile: C:\Users\Dinesh\AppData\Loc..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Session ID: 38b05a84-5bf0-4ca1-8508-9057ec27f703
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at jdk.proxy2/jdk.proxy2.$Proxy19.sendKeys(Unknown Source)
-	at lumaPages.CheckoutPage.enterShippingDetails(CheckoutPage.java:80)
-	at lumaTest.CheckoutTest.testCheckoutProcess(CheckoutTest.java:18)
-	at lumaTestNG.Runner.checkout(Runner.java:35)
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)&quot; because &quot;this.driver&quot; is null
+	at lumaPages.CheckoutPage.&lt;init&gt;(CheckoutPage.java:37)
+	at lumaTest.CheckoutTest.testCheckoutProcess(CheckoutTest.java:23)
+	at lumaTestNG.Runner.checkout(Runner.java:37)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1177568763", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1177568763'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: *[name=&apos;firstname&apos;]
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.2&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [38b05a84-5bf0-4ca1-8508-9057ec27f703, findElement {using=name, value=firstname}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 136.0.2, moz:accessibilityChecks: false, moz:buildID: 20250317120031, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 19044, moz:profile: C:\Users\Dinesh\AppData\Loc..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Session ID: 38b05a84-5bf0-4ca1-8508-9057ec27f703
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at jdk.proxy2/jdk.proxy2.$Proxy19.sendKeys(Unknown Source)
-	at lumaPages.CheckoutPage.enterShippingDetails(CheckoutPage.java:80)
-	at lumaTest.CheckoutTest.testCheckoutProcess(CheckoutTest.java:18)
-	at lumaTestNG.Runner.checkout(Runner.java:35)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1768926513", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1768926513'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)&quot; because &quot;this.driver&quot; is null
+	at lumaPages.CheckoutPage.&lt;init&gt;(CheckoutPage.java:37)
+	at lumaTest.CheckoutTest.testCheckoutProcess(CheckoutTest.java:23)
+	at lumaTestNG.Runner.checkout(Runner.java:37)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -159,8 +114,8 @@ Session ID: 38b05a84-5bf0-4ca1-8508-9057ec27f703
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
-<td>11</td>
-<td>lumaTestNG.Runner@33f676f6</td></tr>
+<td>0</td>
+<td>lumaTestNG.Runner@4c5ae43b</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -171,20 +126,25 @@ Session ID: 38b05a84-5bf0-4ca1-8508-9057ec27f703
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='lumaTestNG.Runner.runnerLogin()'><b>runnerLogin</b><br>Test class: lumaTestNG.Runner</td>
+<td title='lumaTestNG.Runner.runnerAddToCart()'><b>runnerAddToCart</b><br>Test class: lumaTestNG.Runner</td>
 <td></td>
-<td>3</td>
-<td>lumaTestNG.Runner@33f676f6</td></tr>
+<td>13</td>
+<td>lumaTestNG.Runner@4c5ae43b</td></tr>
 <tr>
 <td title='lumaTestNG.Runner.runnerRegistration()'><b>runnerRegistration</b><br>Test class: lumaTestNG.Runner</td>
 <td></td>
 <td>5</td>
-<td>lumaTestNG.Runner@33f676f6</td></tr>
+<td>lumaTestNG.Runner@4c5ae43b</td></tr>
 <tr>
-<td title='lumaTestNG.Runner.runnerAddToCart()'><b>runnerAddToCart</b><br>Test class: lumaTestNG.Runner</td>
+<td title='lumaTestNG.Runner.runnerLogin()'><b>runnerLogin</b><br>Test class: lumaTestNG.Runner</td>
 <td></td>
-<td>6</td>
-<td>lumaTestNG.Runner@33f676f6</td></tr>
+<td>4</td>
+<td>lumaTestNG.Runner@4c5ae43b</td></tr>
+<tr>
+<td title='lumaTestNG.Runner.screenshot()'><b>screenshot</b><br>Test class: lumaTestNG.Runner</td>
+<td></td>
+<td>0</td>
+<td>lumaTestNG.Runner@4c5ae43b</td></tr>
 </table><p>
 </body>
 </html>
