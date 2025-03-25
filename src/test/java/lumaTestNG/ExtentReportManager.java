@@ -17,8 +17,8 @@ public class ExtentReportManager {
             extent.attachReporter(spark);
 
             // Set system details
-            extent.setSystemInfo("Tester", "Your Name");
-            extent.setSystemInfo("Browser", "Chrome");
+            extent.setSystemInfo("Tester", "Vinay Kumar");
+            extent.setSystemInfo("Browser", "Firefox");
             extent.setSystemInfo("OS", System.getProperty("os.name"));
         }
         return extent;

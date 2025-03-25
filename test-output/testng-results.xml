@@ -1,33 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-03-24T10:32:58 IST" name="Default suite" finished-at="2025-03-24T10:33:23 IST" duration-ms="25573">
+  <suite started-at="2025-03-25T11:51:49 IST" name="Luma" finished-at="2025-03-25T11:52:42 IST" duration-ms="53124">
     <groups>
     </groups>
-    <test started-at="2025-03-24T10:32:58 IST" name="Default test" finished-at="2025-03-24T10:33:23 IST" duration-ms="25573">
+    <test started-at="2025-03-25T11:51:49 IST" name="LoginTest" finished-at="2025-03-25T11:52:42 IST" duration-ms="53124">
       <class name="lumaTestNG.Runner">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:lumaTestNG.Runner@b86de0d]" started-at="2025-03-24T10:32:58 IST" name="setUp" finished-at="2025-03-24T10:33:01 IST" duration-ms="3384" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:lumaTestNG.Runner@b86de0d]" started-at="2025-03-25T11:51:49 IST" name="setUp" finished-at="2025-03-25T11:51:53 IST" duration-ms="3486" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="runnerRegistration()[pri:1, instance:lumaTestNG.Runner@b86de0d]" started-at="2025-03-24T10:33:01 IST" name="runnerRegistration" finished-at="2025-03-24T10:33:06 IST" duration-ms="4461" status="PASS">
+        <test-method signature="runnerRegistration()[pri:1, instance:lumaTestNG.Runner@b86de0d]" started-at="2025-03-25T11:51:53 IST" name="runnerRegistration" finished-at="2025-03-25T11:51:58 IST" duration-ms="5730" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runnerRegistration -->
-        <test-method signature="runnerLogin()[pri:2, instance:lumaTestNG.Runner@b86de0d]" started-at="2025-03-24T10:33:06 IST" name="runnerLogin" finished-at="2025-03-24T10:33:10 IST" duration-ms="3994" status="PASS">
+        <test-method signature="runnerLogin()[pri:2, instance:lumaTestNG.Runner@b86de0d]" started-at="2025-03-25T11:51:59 IST" name="runnerLogin" finished-at="2025-03-25T11:52:02 IST" duration-ms="3908" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runnerLogin -->
-        <test-method signature="runnerAddToCart()[pri:3, instance:lumaTestNG.Runner@b86de0d]" started-at="2025-03-24T10:33:10 IST" name="runnerAddToCart" finished-at="2025-03-24T10:33:23 IST" duration-ms="12840" status="PASS">
+        <test-method signature="runnerAddToCart()[pri:3, instance:lumaTestNG.Runner@b86de0d]" started-at="2025-03-25T11:52:02 IST" name="runnerAddToCart" finished-at="2025-03-25T11:52:15 IST" duration-ms="12827" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runnerAddToCart -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:lumaTestNG.Runner@b86de0d]" started-at="2025-03-24T10:33:23 IST" name="tearDown" finished-at="2025-03-24T10:33:23 IST" duration-ms="781" status="PASS">
+        <test-method signature="runnerEditCart()[pri:4, instance:lumaTestNG.Runner@b86de0d]" started-at="2025-03-25T11:52:15 IST" name="runnerEditCart" finished-at="2025-03-25T11:52:32 IST" duration-ms="16318" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runnerEditCart -->
+        <test-method signature="checkout()[pri:5, instance:lumaTestNG.Runner@b86de0d]" started-at="2025-03-25T11:52:32 IST" name="checkout" finished-at="2025-03-25T11:52:41 IST" duration-ms="9837" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkout -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:lumaTestNG.Runner@b86de0d]" started-at="2025-03-25T11:52:41 IST" name="tearDown" finished-at="2025-03-25T11:52:42 IST" duration-ms="897" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- lumaTestNG.Runner -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- LoginTest -->
+  </suite> <!-- Luma -->
 </testng-results>

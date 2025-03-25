@@ -7,6 +7,7 @@ import org.testng.annotations.Test;
 
 import lumaBase.BaseClass;
 import lumaTest.CheckoutTest;
+import lumaTest.EditCartTest;
 import lumaTest.LoginPageTest;
 import lumaTest.RegistrationTest;
 import lumaTest.SearchAndAddToCartTest;
@@ -31,9 +32,15 @@ public class Runner extends BaseClass {
 		addToCart.testSearchAndAddToCart();
 	}
 	
-//	@Test(priority = 4)
-//	public void checkout() throws InterruptedException, IOException {
-//		CheckoutTest Checkout = new CheckoutTest();
-//		Checkout.testCheckoutProcess();
-//	}
+	@Test(priority = 4)
+	public void runnerEditCart() throws InterruptedException {
+		EditCartTest edit = new EditCartTest();
+		edit.editCart();
+	}
+	
+	@Test(priority = 5)
+	public void checkout() throws InterruptedException, IOException {
+		CheckoutTest Checkout = new CheckoutTest();
+		Checkout.testCheckoutProcess();
+	}
 }

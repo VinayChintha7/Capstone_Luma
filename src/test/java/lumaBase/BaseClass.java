@@ -48,8 +48,14 @@ public class BaseClass {
         driver.manage().window().maximize(); //maximising the browser window(for chrome).
     }
 
+    @AfterClass
+    public void tearDown() {
+    	System.out.println("Closing the browser.");
+        driver.close();
+        
+    }
     
-  	public static void screenshot() throws IOException
+    public static void screenshot() throws IOException
   	{
     	
     	 // Get the page title and format it for the filename
@@ -75,11 +81,5 @@ public class BaseClass {
 //  		Files.copy(src, new File("./screenshots/"+"page-"+System.currentTimeMillis()+".png"));
   	}
     
-    @AfterClass
-    public void tearDown() {
-    	System.out.println("Closing the browser.");
-        driver.close();
-        
-    }
 }
 
