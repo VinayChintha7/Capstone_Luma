@@ -1,1 +1,0 @@
-{"uuid":"4b65494e-e15e-404c-a387-0cf73aad4023","name":"lumaBase.BaseClass.tearDown","children":["cff29abb-0f22-4f1b-90bf-eef13d1a78d2"],"description":"","befores":[],"afters":[{"name":"tearDown","status":"broken","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1742445173639,"stop":1742445173639}],"start":1742445173638,"stop":1742445173639}

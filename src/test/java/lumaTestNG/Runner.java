@@ -6,6 +6,7 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import lumaBase.BaseClass;
+import lumaStepDef.LoginSteps;
 import lumaTest.CheckoutTest;
 import lumaTest.EditCartTest;
 import lumaTest.LoginPageTest;
@@ -22,8 +23,14 @@ public class Runner extends BaseClass {
 	
 	@Test(priority = 2)
 	public void runnerLogin() throws IOException {
-		LoginPageTest lt = new LoginPageTest();
-		lt.testLogin("VK1234@gmail.com","Test@1234");
+//		LoginPageTest lt = new LoginPageTest();
+//		lt.testLogin("VK1234@gmail.com","Test@1234");
+		LoginSteps lt = new LoginSteps();
+		lt.user_is_on_login_page();
+		lt.enter_valid_credentials("VK1234@gmail.com", "Test@1234");
+		lt.click_login_button();
+		lt.verify_account_dashboard();
+		
 	}
 	
 	@Test(priority = 3)

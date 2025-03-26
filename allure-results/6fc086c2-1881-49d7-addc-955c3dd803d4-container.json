@@ -1,1 +1,0 @@
-{"uuid":"6fc086c2-1881-49d7-addc-955c3dd803d4","name":"Default test","children":["6d63a144-59c2-44fd-b72e-cb353e77772a"],"befores":[{"name":"runnerRegistration","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1742618698995,"stop":1742618699416}],"afters":[],"start":1742618698979,"stop":1742618710112}

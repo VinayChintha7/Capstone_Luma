@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>LoginTest</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>5/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>4/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Mar 25 11:51:49 IST 2025</td>
+<td>Started on:</td><td>Tue Mar 25 16:29:19 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>53 seconds (53124 ms)</td>
+<tr><td>Total time:</td><td>59 seconds (59920 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,91 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='lumaTestNG.Runner.runnerAddToCart()'><b>runnerAddToCart</b><br>Test class: lumaTestNG.Runner</td>
+<td><div><pre>org.openqa.selenium.ElementNotInteractableException: Element &lt;button id=&quot;top-cart-btn-checkout&quot; class=&quot;action primary checkout&quot; type=&quot;button&quot;&gt; could not be scrolled into view
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.2&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [4e58983a-eb25-41e8-af64-b3a35dd951e2, clickElement {id=8614dec8-090d-4055-a10e-a9ac29316903}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 136.0.2, moz:accessibilityChecks: false, moz:buildID: 20250317120031, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 21676, moz:profile: C:\Users\Dinesh\AppData\Loc..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Element: [[FirefoxDriver: firefox on WINDOWS (4e58983a-eb25-41e8-af64-b3a35dd951e2)] -&gt; xpath: //button[@id=&apos;top-cart-btn-checkout&apos;]]
+Session ID: 4e58983a-eb25-41e8-af64-b3a35dd951e2
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at lumaPages.SearchAndAddToCartPage.addJupiterJacketToCart(SearchAndAddToCartPage.java:57)
+	at lumaTest.SearchAndAddToCartTest.testSearchAndAddToCart(SearchAndAddToCartTest.java:27)
+	at lumaTestNG.Runner.runnerAddToCart(Runner.java:32)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace42684986", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace42684986'><pre>org.openqa.selenium.ElementNotInteractableException: Element &lt;button id=&quot;top-cart-btn-checkout&quot; class=&quot;action primary checkout&quot; type=&quot;button&quot;&gt; could not be scrolled into view
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.2&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [4e58983a-eb25-41e8-af64-b3a35dd951e2, clickElement {id=8614dec8-090d-4055-a10e-a9ac29316903}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 136.0.2, moz:accessibilityChecks: false, moz:buildID: 20250317120031, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 21676, moz:profile: C:\Users\Dinesh\AppData\Loc..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Element: [[FirefoxDriver: firefox on WINDOWS (4e58983a-eb25-41e8-af64-b3a35dd951e2)] -&gt; xpath: //button[@id=&apos;top-cart-btn-checkout&apos;]]
+Session ID: 4e58983a-eb25-41e8-af64-b3a35dd951e2
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at lumaPages.SearchAndAddToCartPage.addJupiterJacketToCart(SearchAndAddToCartPage.java:57)
+	at lumaTest.SearchAndAddToCartTest.testSearchAndAddToCart(SearchAndAddToCartTest.java:27)
+	at lumaTestNG.Runner.runnerAddToCart(Runner.java:32)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>14</td>
+<td>lumaTestNG.Runner@2ca26d77</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -76,30 +161,25 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='lumaTestNG.Runner.runnerEditCart()'><b>runnerEditCart</b><br>Test class: lumaTestNG.Runner</td>
+<td title='lumaTestNG.Runner.runnerLogin()'><b>runnerLogin</b><br>Test class: lumaTestNG.Runner</td>
 <td></td>
-<td>16</td>
-<td>lumaTestNG.Runner@b86de0d</td></tr>
+<td>5</td>
+<td>lumaTestNG.Runner@2ca26d77</td></tr>
 <tr>
 <td title='lumaTestNG.Runner.runnerRegistration()'><b>runnerRegistration</b><br>Test class: lumaTestNG.Runner</td>
 <td></td>
 <td>5</td>
-<td>lumaTestNG.Runner@b86de0d</td></tr>
+<td>lumaTestNG.Runner@2ca26d77</td></tr>
 <tr>
-<td title='lumaTestNG.Runner.runnerLogin()'><b>runnerLogin</b><br>Test class: lumaTestNG.Runner</td>
+<td title='lumaTestNG.Runner.runnerEditCart()'><b>runnerEditCart</b><br>Test class: lumaTestNG.Runner</td>
 <td></td>
-<td>3</td>
-<td>lumaTestNG.Runner@b86de0d</td></tr>
-<tr>
-<td title='lumaTestNG.Runner.runnerAddToCart()'><b>runnerAddToCart</b><br>Test class: lumaTestNG.Runner</td>
-<td></td>
-<td>12</td>
-<td>lumaTestNG.Runner@b86de0d</td></tr>
+<td>19</td>
+<td>lumaTestNG.Runner@2ca26d77</td></tr>
 <tr>
 <td title='lumaTestNG.Runner.checkout()'><b>checkout</b><br>Test class: lumaTestNG.Runner</td>
 <td></td>
 <td>9</td>
-<td>lumaTestNG.Runner@b86de0d</td></tr>
+<td>lumaTestNG.Runner@2ca26d77</td></tr>
 </table><p>
 </body>
 </html>

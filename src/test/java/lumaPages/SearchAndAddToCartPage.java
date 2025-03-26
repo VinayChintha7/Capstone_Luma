@@ -4,14 +4,13 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.Sleeper;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.openqa.selenium.By;
 import java.time.Duration;
 
 public class SearchAndAddToCartPage {
     private WebDriver driver;
-    private WebDriverWait wait;  // ✅ Add WebDriverWait
+    private WebDriverWait wait;  // Add WebDriverWait
 
     // Locators
     private By menMenu = By.xpath("//span[text()='Men']");
@@ -25,7 +24,7 @@ public class SearchAndAddToCartPage {
     // Constructor
     public SearchAndAddToCartPage(WebDriver driver) {
         this.driver = driver;
-        this.wait = new WebDriverWait(driver, Duration.ofSeconds(10)); // ✅ Add Explicit Wait
+        this.wait = new WebDriverWait(driver, Duration.ofSeconds(10)); // Add Explicit Wait
     }
 
     // Navigate to Jackets Section
@@ -44,15 +43,15 @@ public class SearchAndAddToCartPage {
 
     // Select and Add Jacket to Cart
     public void addJupiterJacketToCart() throws InterruptedException {
-        wait.until(ExpectedConditions.elementToBeClickable(jupiterJacket)).click(); // ✅ Wait for Product
-        wait.until(ExpectedConditions.elementToBeClickable(sizeM)).click(); // ✅ Wait for Size
-        wait.until(ExpectedConditions.elementToBeClickable(colorBlue)).click(); // ✅ Wait for Color
-        wait.until(ExpectedConditions.elementToBeClickable(addToCart)).click(); // ✅ Wait for Add to Cart
+        wait.until(ExpectedConditions.elementToBeClickable(jupiterJacket)).click(); // Wait for Product
+        wait.until(ExpectedConditions.elementToBeClickable(sizeM)).click(); // Wait for Size
+        wait.until(ExpectedConditions.elementToBeClickable(colorBlue)).click(); // Wait for Color
+        wait.until(ExpectedConditions.elementToBeClickable(addToCart)).click(); // Wait for Add to Cart
         
         Thread.sleep(2000);;
         WebElement cartIcon = driver.findElement(By.xpath("//a[contains(@class,'action showcart')]"));
         cartIcon.click();
-        Thread.sleep(2000);
+        Thread.sleep(3000);
         WebElement proceedToCheckoutButton = driver.findElement(By.xpath("//button[@id='top-cart-btn-checkout']"));
         proceedToCheckoutButton.click();
         Thread.sleep(2000);

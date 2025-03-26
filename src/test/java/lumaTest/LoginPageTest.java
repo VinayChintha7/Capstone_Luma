@@ -4,7 +4,6 @@ import java.io.IOException;
 
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
-import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.ExtentTest;
 
@@ -32,7 +31,6 @@ public class LoginPageTest extends BaseClass {
 //    @Test(priority = 2,dataProvider = "LoginData")
     public void testLogin(String email, String password) throws IOException {
         ExtentTest test = ExtentReportManager.getReportInstance().createTest("Login Test for : "+ email);
-    	
     	
         driver.get("https://magento.softwaretestingboard.com/customer/account/login/");
         test.info("Navigated to Login Page.");

@@ -1,1 +1,0 @@
-{"uuid":"cfc3023c-754e-40db-b300-def13bd5eb54","name":"lumaBase.BaseClass.setUp","children":["78e84942-616b-4a89-b495-46a206f00d5c"],"description":"","befores":[{"name":"setUp","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1742645934440,"stop":1742645938544}],"afters":[],"start":1742645934437,"stop":1742645938544}

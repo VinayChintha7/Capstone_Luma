@@ -30,6 +30,8 @@ public class EditCartPage {
 		count.sendKeys("1");
 		Thread.sleep(2000);
 		
+//		driver.findElement(By.xpath("//button[@class='update-cart-item']")).click();
+		
 		driver.findElement(By.xpath("//button[@class='action primary checkout']")).click();
 		Thread.sleep(2000);
 	}
